@@ -265,7 +265,7 @@ document.getElementById("custom_background_browse").onclick = document.getElemen
     document.body.removeChild(input);
 };
 
-fetch("/icons.json").then(function (response) {
+fetch("icons.json").then(function (response) {
     return response.json();
 }).then(function (response) {
     const icons = response.icons;
